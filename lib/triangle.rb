@@ -8,8 +8,10 @@ class Triangle
  end
  
  def kind
+   if @left_side <= 0 || @right_side <= 0 || @bottom <= 0
+     raise TriangleError
    #determing if equilateral
-   if @left_side == @right_side && @right_side == @bottom
+   elsif @left_side == @right_side && @right_side == @bottom
      :equilateral
      #determining if isosceles with last two sides equal
     elsif @right_side == @bottom && @left_side != @bottom
