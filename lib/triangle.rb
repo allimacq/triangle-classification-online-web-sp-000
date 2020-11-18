@@ -8,9 +8,9 @@ class Triangle
  end
  
  def kind
-   #determing if equiliateral
+   #determing if equilateral 
    if @left_side == @right_side && @right_side == @bottom
-     :equiliateral
+     :equilateral
    end
    
  end
