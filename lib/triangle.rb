@@ -12,7 +12,7 @@ class Triangle
    if @left_side <= 0 || @right_side <= 0 || @bottom <= 0
      raise TriangleError
   #raises error if violates triange inequality
-    elsif @left_side + @right_side < @bottom || @right_side + @bottom < @left_side || @left_side + @bottom < @right_side
+    elsif @left_side + @right_side <= @bottom || @right_side + @bottom <= @left_side || @left_side + @bottom <= @right_side
       raise TriangleError
    #determing if equilateral
    elsif @left_side == @right_side && @right_side == @bottom
