@@ -7,4 +7,12 @@ class Triangle
    @bottom = bottom
  end
  
+ def kind
+   #determing if equiliateral
+   if @left_side == @right_side && @right_side == @bottom
+     :equiliateral
+   end
+   
+ end
+ 
 end
