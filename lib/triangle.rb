@@ -14,6 +14,9 @@ class Triangle
      #determining if isosceles with last two sides equal
     elsif @right_side == @bottom && @left_side != @bottom
       :isosceles
+    #determining if isosceles with first and last sides equal
+    elsif @left_side == @bottom && @right_side != @bottom
+      :isosceles
    end
    
  end
