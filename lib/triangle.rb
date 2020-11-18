@@ -23,9 +23,10 @@ class Triangle
     #determining if scalene
     elsif @left_side != @bottom && @bottom != @right_side && @left_side != @right_side
       :scalene
-      
    end
-   
+ end
+ 
+ class TriangleError < StandardError
  end
  
 end
